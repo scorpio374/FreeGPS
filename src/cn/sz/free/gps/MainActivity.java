@@ -2,7 +2,6 @@ package cn.sz.free.gps;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
 
 import com.baidu.mapapi.SDKInitializer;
 import com.baidu.mapapi.map.MapView;
@@ -14,34 +13,34 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		//ÔÚÊ¹ÓÃSDK¸÷×é¼şÖ®Ç°³õÊ¼»¯contextĞÅÏ¢£¬´«ÈëApplicationContext  
-        //×¢Òâ¸Ã·½·¨ÒªÔÙsetContentView·½·¨Ö®Ç°ÊµÏÖ  
+		//åœ¨ä½¿ç”¨SDKå„ç»„ä»¶ä¹‹å‰åˆå§‹åŒ–contextä¿¡æ¯ï¼Œä¼ å…¥ApplicationContext  
+        //æ³¨æ„è¯¥æ–¹æ³•è¦å†setContentViewæ–¹æ³•ä¹‹å‰å®ç°  
         SDKInitializer.initialize(getApplicationContext());  
         setContentView(R.layout.activity_main);  
-        //»ñÈ¡µØÍ¼¿Ø¼şÒıÓÃ  
+        //è·å–åœ°å›¾æ§ä»¶å¼•ç”¨  
         mMapView = (MapView) findViewById(R.id.bmapView);  
 	}
 	
     @Override  
     protected void onDestroy() {  
         super.onDestroy();  
-        //ÔÚactivityÖ´ĞĞonDestroyÊ±Ö´ĞĞmMapView.onDestroy()£¬ÊµÏÖµØÍ¼ÉúÃüÖÜÆÚ¹ÜÀí  
+        //åœ¨activityæ‰§è¡ŒonDestroyæ—¶æ‰§è¡ŒmMapView.onDestroy()ï¼Œå®ç°åœ°å›¾ç”Ÿå‘½å‘¨æœŸç®¡ç†  
         mMapView.onDestroy();  
     }  
     
     @Override  
     protected void onResume() {  
         super.onResume();  
-        //ÔÚactivityÖ´ĞĞonResumeÊ±Ö´ĞĞmMapView. onResume ()£¬ÊµÏÖµØÍ¼ÉúÃüÖÜÆÚ¹ÜÀí  
+        //åœ¨activityæ‰§è¡ŒonResumeæ—¶æ‰§è¡ŒmMapView. onResume ()ï¼Œå®ç°åœ°å›¾ç”Ÿå‘½å‘¨æœŸç®¡ç†  
         mMapView.onResume();  
     }  
     
     @Override  
     protected void onPause() {  
         super.onPause();  
-        //ÔÚactivityÖ´ĞĞonPauseÊ±Ö´ĞĞmMapView. onPause ()£¬ÊµÏÖµØÍ¼ÉúÃüÖÜÆÚ¹ÜÀí  
+        //åœ¨activityæ‰§è¡ŒonPauseæ—¶æ‰§è¡ŒmMapView. onPause ()ï¼Œå®ç°åœ°å›¾ç”Ÿå‘½å‘¨æœŸç®¡ç†  
         mMapView.onPause();  
-    }  
+    } 
 }
 
 
