@@ -5,16 +5,17 @@
     tools:context=".MainActivity" >
 
     <TextView
+        android:id="@+id/tv_test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="@string/hello_world" />
     
-    <com.baidu.mapapi.map.MapView  
+<!--     <com.baidu.mapapi.map.MapView  
     	android:id="@+id/bmapView"  
     	android:layout_width="fill_parent"  
     	android:layout_height="fill_parent"  
-    	android:clickable="true" />
+    	android:clickable="true" /> -->
 
 </RelativeLayout>
