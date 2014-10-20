@@ -37,10 +37,16 @@
         android:theme="@style/AppTheme" >
         
         <meta-data  
-        android:name="com.baidu.lbsapi.API_KEY"  
-        android:value="D4hPkYkmWrVZqM7mSFRm1ZOg" /> 
+        android:name="com.baidu.lbsapi.API_KEY"
+        android:value="bLKDbEQxGGhOqF9x1BjCu2V9" /> 
         
-          <service
+        <!-- Home -->
+        <!-- D4hPkYkmWrVZqM7mSFRm1ZOg -->
+        
+        <!-- Company -->
+        <!-- bLKDbEQxGGhOqF9x1BjCu2V9 -->
+        
+        <service
             android:name="com.baidu.location.f"
             android:enabled="true"
             android:process=":remote" >
@@ -55,9 +61,15 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        
+       <activity
+            android:name="cn.sz.free.gps.OfflineDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
         </activity>
     </application>
 

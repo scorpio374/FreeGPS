@@ -4,6 +4,37 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity" >
 
+    <LinearLayout 
+        android:id="@+id/layout_group_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <Button
+            android:id="@+id/locationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定位"/>
+        
+         <Button
+            android:id="@+id/routeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="距离"/>
+         
+         <Button
+            android:id="@+id/offlineButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="离线地图"/>
+         
+         <Button
+            android:id="@+id/geometryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="绘图"/>
+    </LinearLayout>
+    
     <TextView
         android:id="@+id/tv_test"
         android:layout_width="wrap_content"
@@ -13,9 +44,10 @@
         android:text="@string/hello_world" />
     
     <com.baidu.mapapi.map.MapView  
-    	android:id="@+id/bmapView"  
-    	android:layout_width="fill_parent"  
-    	android:layout_height="fill_parent"  
+    	android:id="@+id/bmapView"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_below="@id/layout_group_button"   
     	android:clickable="true" />
 
 </RelativeLayout>
